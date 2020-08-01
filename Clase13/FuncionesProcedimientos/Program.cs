@@ -14,11 +14,18 @@ namespace FuncionesProcedimientos
             do
             {
                 menu();
-                opcion = int.Parse(Console.ReadLine());
-                operaciones(opcion);
+                opcion = int.Parse(Console.ReadLine());              
+                if (opcion < 5 && opcion > 0)
+                {
+                    operaciones(opcion);
+                }
+                else
+                {
+                Console.WriteLine("Opcion invalida!!"); break;
+                }
 
-            } while (opcion != 0);
-           
+            } while (opcion !=0);
+            
            
             Console.ReadKey();
         }
@@ -46,7 +53,7 @@ namespace FuncionesProcedimientos
                 case 2: Console.WriteLine("La resta es :" + (n1 - n2)); break;
                 case 3: Console.WriteLine("La multiplicacion es :" + (n1 * n2)); break;
                 case 4: Console.WriteLine("La division es :" + (n1 / n2)); break;
-                default:Console.WriteLine("Opcion invalida!!"); break;
+                
             }
 
 
