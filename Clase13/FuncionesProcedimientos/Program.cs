@@ -15,12 +15,10 @@ namespace FuncionesProcedimientos
             {
                 menu();
                 opcion = int.Parse(Console.ReadLine());
-                if (opcion == 1)
-                {
-                    sumar();
-                }
+                operaciones(opcion);
+
             } while (opcion != 0);
-            menu();
+           
            
             Console.ReadKey();
         }
@@ -35,15 +33,25 @@ namespace FuncionesProcedimientos
             Console.WriteLine("Ingrese una Opcion: ");
         }
 
-        static void sumar()
+        static void operaciones(int x)
         {
             Console.WriteLine("ingrese numero 1");
             int n1 = int.Parse(Console.ReadLine());
             Console.WriteLine("ingrese numero 2");
             int n2 = int.Parse(Console.ReadLine());
-            Console.WriteLine("La suma es :" + (n1 + n2));
+
+            switch (x)
+            {
+                case 1: Console.WriteLine("La suma es :"+(n1+n2)); break;
+                case 2: Console.WriteLine("La resta es :" + (n1 - n2)); break;
+                case 3: Console.WriteLine("La multiplicacion es :" + (n1 * n2)); break;
+                case 4: Console.WriteLine("La division es :" + (n1 / n2)); break;
+                default:Console.WriteLine("Opcion invalida!!"); break;
+            }
+
+
         }
-       
+
 
     }
 }
