@@ -14,6 +14,7 @@ namespace Clase13
             //Uso de Matrices registro de usuarios 
 
             string[,] usuarios = new string[2, 3];
+            Console.WriteLine("Hello world");
 
             for (int i = 0; i < 2; i++)
             {
