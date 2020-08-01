@@ -1,1 +1,2 @@
 prueba de git
+nueva funcionalidad del modulo de registro 
