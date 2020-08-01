@@ -13,10 +13,10 @@ namespace Clase13
 
             //Uso de Matrices registro de usuarios 
 
-            string[,] usuarios = new string[2, 3];
+            string[,] usuarios = new string[3, 3];
             Console.WriteLine("Hello world");
 
-            for (int i = 0; i < 2; i++)
+            for (int i = 0; i < 3; i++)
             {
                 Console.Write("Ingrese su Nombre:");
                 usuarios[i, 0] = Console.ReadLine();
@@ -28,7 +28,7 @@ namespace Clase13
                 usuarios[i, 2] = Console.ReadLine();
             }
 
-            for (int i = 0; i < 2; i++)
+            for (int i = 0; i < 3; i++)
             {
                 Console.WriteLine("Usuario:{0} Nombre:{1}  Apellido:{2}  Mail:{3}",i+1,usuarios[i,0], usuarios[i, 1], usuarios[i, 2]);
             }
