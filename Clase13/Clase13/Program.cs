@@ -32,6 +32,7 @@ namespace Clase13
             {
                 Console.WriteLine("Usuario:{0} Nombre:{1}  Apellido:{2}  Mail:{3}",i+1,usuarios[i,0], usuarios[i, 1], usuarios[i, 2]);
             }
+            Console.WriteLine("Bye World");
             Console.ReadKey();
         }
     }
